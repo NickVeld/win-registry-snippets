@@ -1,0 +1,23 @@
+; WARNING: before run replace PATH_TO_APP with correct value
+; Example: C:\\App
+
+; Open files
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
+@="Edit_with_&VS_Code"
+"Icon"="\"PATH_TO_APP\\Code.exe\",0"
+[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+@="\"PATH_TO_APP\\Code.exe\" \"%1\""
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+@="Open_Folder_as_&VS_Code_WSpace"
+"Icon"="\"PATH_TO_APP\\Code.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+@="\"PATH_TO_APP\\Code.exe\" \"%1\""
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+@="Open_Folder_as_&VS_Code_WSpace"
+"Icon"="\"PATH_TO_APP\\Code.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+@="\"PATH_TO_APP\\Code.exe\" \"%V\""

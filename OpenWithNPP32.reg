@@ -1,0 +1,23 @@
+; WARNING: before run replace PATH_TO_APP with correct value
+; Example: C:\\App
+
+; Open files
+[HKEY_CLASSES_ROOT\*\shell\NPP32]
+@="Edit_with_&NPP32"
+"Icon"="\"PATH_TO_APP\\notepad++.exe\",0"
+[HKEY_CLASSES_ROOT\*\shell\NPP32\command]
+@="\"PATH_TO_APP\\notepad++.exe\" \"%1\""
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+[HKEY_CLASSES_ROOT\Directory\shell\NPP32]
+@="Open_Folder_as_&NPP32_WSpace"
+"Icon"="\"PATH_TO_APP\\notepad++.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\shell\NPP32\command]
+@="\"PATH_TO_APP\\notepad++.exe\" \"%1\""
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+[HKEY_CLASSES_ROOT\Directory\Background\shell\NPP32]
+@="Open_Folder_as_&NPP32_WSpace"
+"Icon"="\"PATH_TO_APP\\notepad++.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\NPP32\command]
+@="\"PATH_TO_APP\\notepad++.exe\" \"%V\""
