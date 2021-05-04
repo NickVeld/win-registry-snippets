@@ -1,11 +1,14 @@
+Windows Registry Editor Version 5.00
+
+
 ; WARNING: before run replace PATH_TO_APP with correct value
 ; Example: C:\\App
 
 ; Open files
-[HKEY_CLASSES_ROOT\*\shell\VSCode]
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\VSCode]
 @="Edit_with_&VS_Code"
 "Icon"="\"PATH_TO_APP\\Code.exe\",0"
-[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\VSCode\command]
 @="\"PATH_TO_APP\\Code.exe\" \"%1\""
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
