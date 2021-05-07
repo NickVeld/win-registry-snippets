@@ -1,0 +1,48 @@
+Windows Registry Editor Version 5.00
+
+
+; WARNING: before run replace PATH_TO_APP with correct value
+; Example: C:\\App
+
+;%%%%%%%%%%%%%%%% Git Bash %%%%%%%%%%%%%%%%
+
+[HKEY_CLASSES_ROOT\Directory\shell\GitBash]
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+@="Git &Bash In"
+"Icon"="\"PATH_TO_APP\\git-bash.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\GitBash\command]
+@="\"PATH_TO_APP\\git-bash.exe\" \"--cd=%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitBash]
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+@="Git &Bash Here"
+"Icon"="\"PATH_TO_APP\\git-bash.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitBash\command]
+@="\"PATH_TO_APP\\git-bash.exe\" \"--cd=%V\""
+
+
+;%%%%%%%%%%%%%%%% Git GUI %%%%%%%%%%%%%%%%
+
+[HKEY_CLASSES_ROOT\Directory\shell\GitGUI]
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+@="Git &GUI In"
+"Icon"="\"PATH_TO_APP\\cmd\\git-gui.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\GitGUI\command]
+@="\"PATH_TO_APP\\cmd\\git-gui.exe\" \"--working-dir\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitGUI]
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+@="Git &GUI Here"
+"Icon"="\"PATH_TO_APP\\cmd\\git-gui.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitGUI\command]
+@="\"PATH_TO_APP\\cmd\\git-gui.exe\" \"--working-dir\" \"%V\""
