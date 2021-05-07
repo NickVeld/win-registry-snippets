@@ -6,23 +6,30 @@ Windows Registry Editor Version 5.00
 
 ; "JetBrains" is typed in the keys for placing their IDEs together because of the alphabetical order
 
+[HKEY_CLASSES_ROOT\*\shell\JetBrainsCLion]
 ; Open files
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\JetBrainsCLion]
-@="Edit_with_C&Lion"
+@="Edit with C&Lion"
 "Icon"="\"PATH_TO_APP\\bin\\clion64.exe\",0"
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\JetBrainsCLion\command]
+
+[HKEY_CLASSES_ROOT\*\shell\JetBrainsCLion\command]
 @="\"PATH_TO_APP\\bin\\clion64.exe\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\JetBrainsCLion]
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-[HKEY_CLASSES_ROOT\Directory\shell\JetBrainsCLion]
-@="Open_Folder_as_C&Lion_Project"
+@="Open Folder as C&Lion Project"
 "Icon"="\"PATH_TO_APP\\bin\\clion64.exe\",0"
+
 [HKEY_CLASSES_ROOT\Directory\shell\JetBrainsCLion\command]
 @="\"PATH_TO_APP\\bin\\clion64.exe\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\JetBrainsCLion]
 ; This will make it appear when you right click INSIDE a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-[HKEY_CLASSES_ROOT\Directory\Background\shell\JetBrainsCLion]
-@="Open_Folder_as_C&Lion_Project"
+@="Open Folder as C&Lion Project"
 "Icon"="\"PATH_TO_APP\\bin\\clion64.exe\",0"
+
 [HKEY_CLASSES_ROOT\Directory\Background\shell\JetBrainsCLion\command]
 @="\"PATH_TO_APP\\bin\\clion64.exe\" \"%V\""

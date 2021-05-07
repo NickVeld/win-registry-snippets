@@ -6,23 +6,30 @@ Windows Registry Editor Version 5.00
 
 ; "JetBrains" is typed in the keys for placing their IDEs together because of the alphabetical order
 
+[HKEY_CLASSES_ROOT\*\shell\JetBrainsPyCharm]
 ; Open files
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\JetBrainsPyCharm]
-@="Edit_with_P&yCharm"
+@="Edit with P&yCharm"
 "Icon"="\"PATH_TO_APP\\bin\\pycharm64.exe\",0"
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\JetBrainsPyCharm\command]
+
+[HKEY_CLASSES_ROOT\*\shell\JetBrainsPyCharm\command]
 @="\"PATH_TO_APP\\bin\\pycharm64.exe\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\JetBrainsPyCharm]
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-[HKEY_CLASSES_ROOT\Directory\shell\JetBrainsPyCharm]
-@="Open_Folder_as_P&yCharm_Project"
+@="Open Folder as P&yCharm Project"
 "Icon"="\"PATH_TO_APP\\bin\\pycharm64.exe\",0"
+
 [HKEY_CLASSES_ROOT\Directory\shell\JetBrainsPyCharm\command]
 @="\"PATH_TO_APP\\bin\\pycharm64.exe\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\JetBrainsPyCharm]
 ; This will make it appear when you right click INSIDE a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-[HKEY_CLASSES_ROOT\Directory\Background\shell\JetBrainsPyCharm]
-@="Open_Folder_as_P&yCharm_Project"
+@="Open Folder as P&yCharm Project"
 "Icon"="\"PATH_TO_APP\\bin\\pycharm64.exe\",0"
+
 [HKEY_CLASSES_ROOT\Directory\Background\shell\JetBrainsPyCharm\command]
 @="\"PATH_TO_APP\\bin\\pycharm64.exe\" \"%V\""

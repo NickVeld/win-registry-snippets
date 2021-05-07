@@ -4,23 +4,28 @@ Windows Registry Editor Version 5.00
 ; WARNING: before run replace PATH_TO_APP with correct value
 ; Example: C:\\App
 
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
 ; Open files
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\VSCode]
-@="Edit_with_&VS_Code"
+@="Edit with &VS Code"
 "Icon"="\"PATH_TO_APP\\Code.exe\",0"
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\VSCode\command]
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
 @="\"PATH_TO_APP\\Code.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
-@="Open_Folder_as_&VS_Code_WSpace"
+@="Open Folder as &VS Code WSpace"
 "Icon"="\"PATH_TO_APP\\Code.exe\",0"
+
 [HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
 @="\"PATH_TO_APP\\Code.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
 ; This will make it appear when you right click INSIDE a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
-@="Open_Folder_as_&VS_Code_WSpace"
+@="Open Folder as &VS Code WSpace"
 "Icon"="\"PATH_TO_APP\\Code.exe\",0"
+
 [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
 @="\"PATH_TO_APP\\Code.exe\" \"%V\""
