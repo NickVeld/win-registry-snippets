@@ -4,30 +4,30 @@ Windows Registry Editor Version 5.00
 ; WARNING: before run replace PATH_TO_APP with correct value
 ; Example: C:\\NotepadPP
 
-[HKEY_CLASSES_ROOT\*\shell\NPP32]
+[HKEY_CLASSES_ROOT\*\shell\NPP]
 ; Open files
-@="Edit with &NPP32"
+@="Edit with &NPP"
 "Icon"="\"PATH_TO_APP\\notepad++.exe\",0"
 
-[HKEY_CLASSES_ROOT\*\shell\NPP32\command]
+[HKEY_CLASSES_ROOT\*\shell\NPP\command]
 @="\"PATH_TO_APP\\notepad++.exe\" \"%1\""
 
 
-[HKEY_CLASSES_ROOT\Directory\shell\NPP32]
+[HKEY_CLASSES_ROOT\Directory\shell\NPP]
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-@="Open Folder as &NPP32 WSpace"
+@="Open Folder as &NPP WSpace"
 "Icon"="\"PATH_TO_APP\\notepad++.exe\",0"
 
-[HKEY_CLASSES_ROOT\Directory\shell\NPP32\command]
+[HKEY_CLASSES_ROOT\Directory\shell\NPP\command]
 @="\"PATH_TO_APP\\notepad++.exe\" \"%1\""
 
 
-[HKEY_CLASSES_ROOT\Directory\Background\shell\NPP32]
+[HKEY_CLASSES_ROOT\Directory\Background\shell\NPP]
 ; This will make it appear when you right click INSIDE a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-@="Open Folder as &NPP32 WSpace"
+@="Open Folder as &NPP WSpace"
 "Icon"="\"PATH_TO_APP\\notepad++.exe\",0"
 
-[HKEY_CLASSES_ROOT\Directory\Background\shell\NPP32\command]
+[HKEY_CLASSES_ROOT\Directory\Background\shell\NPP\command]
 @="\"PATH_TO_APP\\notepad++.exe\" \"%V\""
