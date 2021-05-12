@@ -9,7 +9,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\GitBash]
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-@="Git &Bash In"
+@="Git &Bash There"
 "Icon"="\"PATH_TO_APP\\git-bash.exe\",0"
 
 [HKEY_CLASSES_ROOT\Directory\shell\GitBash\command]
@@ -31,7 +31,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\GitGUI]
 ; This will make it appear when you right click ON a folder
 ; The "Icon" line can be removed if you don't want the icon to appear
-@="Git &GUI In"
+@="Git &GUI There"
 "Icon"="\"PATH_TO_APP\\cmd\\git-gui.exe\",0"
 
 [HKEY_CLASSES_ROOT\Directory\shell\GitGUI\command]
