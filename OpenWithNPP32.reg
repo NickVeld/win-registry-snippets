@@ -2,7 +2,7 @@ Windows Registry Editor Version 5.00
 
 
 ; WARNING: before run replace PATH_TO_APP with correct value
-; Example: C:\\App
+; Example: C:\\NotepadPP
 
 [HKEY_CLASSES_ROOT\*\shell\NPP32]
 ; Open files

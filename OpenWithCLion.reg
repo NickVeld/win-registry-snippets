@@ -2,7 +2,7 @@ Windows Registry Editor Version 5.00
 
 
 ; WARNING: before run replace PATH_TO_APP with correct value
-; Example: C:\\App
+; Example: C:\\JetBrains\\CLion
 
 ; "JetBrains" is typed in the keys for placing their IDEs together because of the alphabetical order
 
